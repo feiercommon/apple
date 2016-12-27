@@ -1,0 +1,710 @@
+body,div,ul,li,span,p{
+  margin:0;
+  padding:0;
+  list-style:none;
+  font-family:"HanHei SC", PingHei, "PingFang SC", "Helvetica Neue",  Helvetica, Arial, sans-serif;
+}
+img{
+  border:0;
+}
+a{
+  text-decoration:none;
+}
+.header{
+   width:100%;
+   height:44px;
+   background:#444;
+}
+.headword{
+  font-size:12px;
+  color:#a8a8aa;
+  max-width:976px;
+  line-height:44px;
+  float:right;
+  margin-right:150px;
+}
+//主要部分
+.main{
+  width:100%;
+}
+.bannernav{
+  width:100%;
+  height:44px;
+  background:rgba(0,0,0,0.8);
+  dispaly:inline-block;
+}
+.navbox{
+  width:1000px;
+  margin:auto;
+  padding:0 10px;
+  position:relative;
+  height:44px;
+  display:none;
+}
+.navbox a{
+  float:left;
+  color:#fff;
+  line-height:44px;
+  padding:0 10px;
+  margin:0 30px;
+  font-size:14px;
+}
+.navbox a:nth-child(1){
+  background:url(../img/image_small.svg);
+  height:100%;
+}
+.navbox a:nth-last-child(1){
+  background:url(../img/2.svg);
+  height:100%;
+}
+.navbox a:nth-last-child(2){
+  background:url(../img/l.svg);
+  height:100%;
+}
+.small-nav{
+  display:block;
+  background:#000;
+ }
+.small-nav .option{
+  float:left;
+}
+.small-nav .option .commt{
+  width:100%;
+  height:48px;
+  line-height:48px;
+  color:#fff;
+}
+.small-nav .menu .dengyu{
+   font-size:30px;
+   line-height:44px;
+  margin-left:20px;
+  background-position:center;
+ }
+.small-nav .login .apples{
+  display:block;
+  background:url(../img/image_small.svg) no-repeat;
+  background-position:center;
+}
+.small-nav .text .bag{
+  display:block;
+  background:url(../img/2.svg) no-repeat;
+  background-position:center;
+}
+.fathers{
+  display:none;
+}
+.option{
+  width:100%;
+}
+.option:nth-child(1){
+  width:10%;
+}
+.option:nth-child(2){
+  width:80%;
+  text-align:center;
+}
+.option:nth-last-child(1){
+  width:10%;
+}
+.fathers{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:99999;
+  background:#000;
+  overflow:hidden;
+}
+.fathers .nav-son div:nth-child(1){
+  width:45%;
+  height:70px;
+  float:left;
+  line-height:70px;
+  font-size:30px;
+  color:#fff;
+  margin-left:20px;
+}
+.fathers .nav-son div:nth-child(2){
+  width:50%;
+  height:70px;
+  float:left;
+  margin-top:13px;
+  background:url(../img/image_small.svg) no-repeat;
+}
+.fathers .menu-son .sons{
+  width:100%;
+  height:60px;
+  float:left;
+  color:#fff;
+  margin-left:50px;
+  line-height:60px;
+  border-bottom:1px solid #666;
+}
+.fathers .menu-son .sons:nth-last-child(1){
+  border-bottom:1px solid #ccc;
+  font-size:20px;
+  font-weight:bold;
+  background:url(../img/l.svg) no-repeat;
+  background-size:30px 60px;
+}
+//轮波
+.banner{
+  width:100%;
+  height:520px;
+  position:relative;
+  overflow:hidden;
+}
+.bannerbox{
+  width:100%;
+  height:100%;
+  position:relative;
+}
+.bannerbox .list{
+  position:absolute;
+  width:100%;
+  height:100%;
+}
+.btns{
+  width:170px;
+  height:2px;
+  position:absolute;
+  left:0;right:0;bottom:50px;
+  margin:auto;
+  z-index:666;
+}
+.btns .btns-list{
+  float:left;width:50px;height:100%;
+  margin-right:10px;
+  background:#333333;
+  position: relative;
+}
+.list .list-computer{
+  width:22%;
+  height:80px;
+  margin:25px auto 0;
+  background:url(../img/cc.png) no-repeat;
+  z-index:999;
+  background-size:120px 20px;
+}
+.list .list-word1{
+  margin:auto;
+  display:block;
+  width:50%;
+  margin-top:-50px;
+  font-weight:normal;
+  color:#555;
+  font-size:25px;
+}
+.list .list-apples{
+  width:14%;
+  height:80px;
+  margin:35px auto 0;
+  background:url(../img/aa.png) no-repeat;
+  z-index:999;
+  background-size:70px 25px;
+}
+.list .list-word2{
+  display:block;
+  margin:0 auto;
+  width:21%;
+  font-weight:normal;
+  color:#fff;
+  font-size:25px;
+  margin-top:-30px;
+}
+.btns .btns-list:last-child{
+  margin:0;
+}
+.btns .progress{
+  height:100%;background:#aaa;
+  width:0;
+}
+.left {
+  width: 20%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index:999;
+}
+.right{
+  width:20%;height:100%;
+  right:0;top:0;
+  position:absolute;
+  z-index:999;
+}
+.leftbtn{
+  position:absolute;
+  left:30px;
+  top:0;
+  bottom:0;
+  margin:auto;
+  width:50px;
+  height:50px;
+  background:#ddd;
+  font-size:30px;
+  line-height:50px;
+  text-align:center;
+  color:#aaa;
+  border-radius:50%;
+  opacity:0;
+  transtion:opacity .5s ease;
+}
+.rightbtn{
+  position:absolute;
+  right:30px;
+  top:0;
+  bottom:0;
+  margin:auto;
+  width:50px;
+  height:50px;
+  background:#ddd;
+  font-size:30px;
+  line-height:50px;
+  text-align:center;
+  color:#aaa;
+  border-radius:50%;
+  opacity:0;
+  transtion:opacity .5s ease;
+}
+.left:hover .leftbtn{
+  opacity:1;
+}
+.right:hover .rightbtn{
+  opacity:1;
+}
+.bannerbox .picture1{
+  background:#fff url(../img/macbookpro_small.jpg) no-repeat;
+  background-size:contain;background-position:center bottom;
+}
+.bannerbox .picture2{
+  background:#000 url(../img/iphone.jpg) no-repeat;
+  background-size:contain;background-position:center bottom;
+  left:100%;
+}
+.bannerbox .picture3{
+  background:#000 url(../img/event_small.jpg) no-repeat;
+  background-size:contain;background-position:center bottom;
+  left:100%;
+}
+.navbox{
+  display:none;
+}
+.container-fluid{
+  border:2px solid #fff;
+}
+.list1{
+  background: url("../img/nike_watch_small.jpg");
+  background-size: 736px 200px;
+  display: block;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-bottom:2px solid #fff;
+}
+.list2{
+  background: url("../img/airpods_small.jpg");
+  background-size: 736px 200px;
+  display: block;
+  height: 200px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-bottom:2px solid #fff;
+}
+.list3{
+  background: url("../img/iphone_upgrade_small.jpg");
+  background-size: 736px 200px;
+  display: block;
+  height: 200px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-bottom:2px solid #fff;
+}
+.list4{
+  background: url("../img/accessibility_small.jpg");
+  background-size: 736px 200px;
+  display: block;
+  height: 200px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.footersmall{
+  max-width:980px;
+  padding:0 20px;
+  margin:0 auto;
+  display:block;
+}
+.a-footbox{
+  width:100%;
+}
+.a-content{
+  width:100%;
+  height:100%;
+  padding:0 16px;
+  background:#f2f2f2;
+}
+.a-contruction{
+  border-bottom:1px solid #e3e3e3;
+  color:#999;
+  padding:13px 0 13px;
+}
+.a-contruction span{
+  font-family:'HanHei SC', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
+  font-size:12px;
+  line-height:1.3333;
+  font-weight:400;
+  letter-spacing:normal;
+}
+.a-menu{
+  font-size:12px;
+  line-height:1.2;
+  font-weight:400;
+  list-spacing:normal;
+  position:relative;
+  z-index:1;
+  padding-top:20px;
+}
+.a-menu-food{
+  position:relative;
+  z-index:1;
+}
+.a-menu-detail{
+  border-bottom:1px solid #e3e3e3;
+  width:100%;
+  position:relative;
+}
+.a-menu-detail-title{
+  color:#333;
+  font-size:1em;
+}
+.a-menu-detail:before{
+  content:"+";
+  display:block;
+  float:right;
+  margin-right:8px;
+}
+.a-menu-detail:after{
+  clear:both;
+}
+.a-menu-detail-list{
+  position:static;
+  z-index:1;
+  width:100%;
+  padding-bottom:16px;
+  transtion:transform 300ms ease;
+}
+.a-menu-detail-con{
+  padding:10px 0;
+}
+.a-menu-detail-con-link{
+  padding:0 14px;
+  color:#000;
+}
+.a-menu-detail-con-link:hover{
+  text-decoration:underline;
+}
+.a-menu-detail-list{
+  display:none;
+}
+.a-footer-box{
+  padding:20px 0;
+}
+.a-footer-box-shop{
+  padding-bottom:6px;
+  font-size:12px;
+  font-family:inherit;
+  color:#999;
+}
+.nowrap a{
+  color:#0070c9;
+}
+.a-footer-box-locale-link{
+  font-size:12px;
+  margin-top:5px;
+  display:block;
+  color:#666;
+  float:left;
+}
+.a-footer-box-locale-link .china-picture{
+  width:21px;
+  height:16px;
+  background:url(../img/china.png) no-repeat;
+  background-size:16px 16px;
+  display:inline-block;
+  float:left;margin-top:1px;
+  background-position:left center;
+}
+.a-footer-box-legal{
+  padding-top:13px;
+}
+.a-footer-box-legal-copyright{
+  font-size:12px;
+  color:#666;
+  padding-top:20px;
+}
+.a-footer-box-legal-links{
+  width:100%;
+}
+.a-footer-box-legal-link:before{
+  display:block;
+}
+.a-footer-box-legal-link:after{
+  content:"|";
+  clear:both;
+  margin-left:10px;
+  color:#ccc;
+}
+.a-footer-box-legal-link{
+  font-size:12px;
+  color:#333;
+  padding-right:10px;
+}
+.foot{
+  display:none;
+}
+@media screen and (min-width:735px){
+  .navbox{
+    display:block;
+  }
+  .small-nav{
+    display:none;
+  }
+  .bannerbox .picture1{
+    background:#fff url(../img/macbookpro_medium.jpg) no-repeat;
+    background-size:contain;background-position:center bottom;
+  }
+  .bannerbox .picture2{
+    background:#000 url(../img/iphone.jpg) no-repeat;
+    background-size:contain;background-position:center bottom;
+    left:100%;
+  }
+  .bannerbox .picture3{
+    background:#000 url(../img/event_medium.jpg) no-repeat;
+    background-size:contain;background-position:center bottom;
+    left:100%;
+  }
+  .list .list-computer{
+    width:22%;
+    height:80px;
+    margin:25px auto 0;
+    background:url(../img/cc.png) no-repeat;
+    z-index:999;
+    background-size:150px 30px;
+  }
+  .list .list-word1{
+    margin:auto;
+    display:block;
+    width:38%;
+    margin-top:-40px;
+    font-weight:normal;
+    color:#555;
+    font-size:28px;
+  }
+  .list .list-apples{
+    width:17%;
+    height:90px;
+    margin:35px auto 0;
+    background:url(../img/aa.png) no-repeat;
+    z-index:999;
+    background-size:95px 25px;
+  }
+  .list .list-word2{
+    display:block;
+    margin:0 auto;
+    width:16%;
+    font-weight:normal;
+    color:#fff;
+    font-size:28px;
+    margin-top:-45px;
+  }
+  .container-fluid{
+    border:2px solid #fff;
+  }
+  .list1{
+    background: url("../img/nike_watch_medium.jpg");
+    background-size: 640px 200px;
+    display: block;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-bottom:2px solid #fff;
+    border-right:2px solid #fff;
+  }
+  .list2{
+    background: url("../img/airpods_medium.jpg");
+    background-size: 640px 200px;
+    display: block;
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-bottom:2px solid #fff;
+    border-right:none;
+  }
+  .list3{
+    background: url("../img/iphone_upgrade_medium.jpg");
+    background-size: 640px 200px;
+    display: block;
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-right:1px solid #fff;
+    border-bottom:none;
+  }
+  .list4{
+    background: url("../img/accessibility_medium.jpg");
+    background-size: 640px 200px;
+    display: block;
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .a-content{
+    width:100%;
+    height:100%;
+  }
+  .a-menu{
+    width:100%;
+    height:100%;
+    float:left;
+  }
+  .a-menu .a-menu-detail{
+    width:20%;
+    float:left;
+  }
+  .a-menu-detail{
+    border-bottom:0;
+  }
+  .a-menu-detail-list{
+     display:block;
+   }
+  .a-menu-detail:before{
+    content:"";
+    display:block;
+  }
+  .a-menu-detail:after{
+    clear:both;
+  }
+  .a-menu-detail-con a{
+    padding:0;
+    color:#666666;
+  }
+  .a-menu-detail-list .a-menu-detail-con{
+    padding:3px 0;
+  }
+  .a-footer-box .a-footer-box-shop{
+    width:100%;
+  }
+  .a-footer-box-shop{
+    border-bottom:1px solid #ccc;
+  }
+  .a-footer-box-locale-link{
+    float:right;
+  }
+  .a-footer-box-legal-copyright{
+    float:left;
+    margin-top:-25px;
+    margin-right:20px;
+  }
+  .a-footer-box-legal-links{
+    margin-top:-10px;
+  }
+}
+@media screen and (min-width:1075px){
+  .navbox{
+    display:block;
+  }
+  .small-nav{
+    display:none;
+  }
+  .container-fluid{
+    border:2px solid #fff;
+  }
+  .list1{
+    background: url("../img/nike_watch_large.jpg");
+    background-size: 360px 200px;
+    display: block;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-right:2px solid #fff;
+    border-bottom:none;
+  }
+  .list2{
+    background: url("../img/airpods_large.jpg");
+    background-size: 360px 200px;
+    display: block;
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-right:2px solid #fff;
+    border-bottom:none;
+  }
+  .list3{
+    background: url("../img/iphone_upgrade_large.jpg");
+    background-size: 360px 200px;
+    display: block;
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-right:2px solid #fff;
+  }
+  .list4{
+    background: url("../img/accessibility_large.jpg");
+    background-size: 360px 200px;
+    display: block;
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .list .list-computer{
+    width:17%;
+    height:80px;
+    margin:25px auto 0;
+    background:url(../img/cc.png) no-repeat;
+    z-index:999;
+    background-size:150px 30px;
+  }
+  .list .list-word1{
+    margin:auto;
+    display:block;
+    width:25%;
+    margin-top:-40px;
+    font-weight:normal;
+    color:#555;
+    font-size:28px;
+  }
+  .list .list-apples{
+    width:11%;
+    height:90px;
+    margin:35px auto 0;
+    background:url(../img/aa.png) no-repeat;
+    z-index:999;
+    background-size:95px 25px;
+  }
+  .list .list-word2{
+    display:block;
+    margin:0 auto;
+    width:12%;
+    font-weight:normal;
+    color:#fff;
+    font-size:30px;
+    margin-top:-45px;
+  }
+  .a-content .a-contruction{
+    width:80%;
+    margin:auto;
+  }
+  .a-menu{
+    margin:auto;
+    width:100%;
+  }
+  .a-menu .a-menu-food{
+    margin:auto;
+    width:80%;
+  }
+  .a-content .a-footer-box{
+    width:80%;
+    margin:auto;
+  }
+
+}
+
